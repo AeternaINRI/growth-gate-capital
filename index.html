@@ -240,8 +240,10 @@ footer{background:#070605;border-top:1px solid var(--line-soft);padding:64px 0 4
 .foot-col h4{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
 .foot-col a,.foot-col p{display:block;color:var(--muted);font-size:.92rem;margin-bottom:11px}
 .foot-col a:hover{color:var(--gold-bright)}
-.foot-bottom{padding-top:30px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem;color:var(--muted-dim)}
-.foot-bottom .disc{max-width:760px;line-height:1.6}
+.foot-bottom{padding-top:30px;display:flex;flex-direction:column;gap:18px;font-size:.8rem;color:var(--muted-dim)}
+.foot-bottom .disc{max-width:100%;line-height:1.6}
+.foot-bottom .disc p{margin-bottom:10px;font-size:.74rem;color:var(--muted-dim)}
+.foot-bottom .disc p:last-child{margin-bottom:0}
 @media(max-width:760px){.foot-top{grid-template-columns:1fr;gap:34px}}
 </style>
 </head>
@@ -614,8 +616,13 @@ footer{background:#070605;border-top:1px solid var(--line-soft);padding:64px 0 4
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="yr"></span> Growth Gate Capital. All rights reserved.</span>
-      <span class="disc">Growth Gate Capital is a real estate investment company. We are not real estate agents and do not provide brokerage, legal, or financial advice. All offers are subject to a property condition review.</span>
+      <span>© <span id="yr"></span> Growth Gate Capital, LLC. All rights reserved.</span>
+      <div class="disc">
+        <p>Growth Gate Capital, LLC is a real estate investment company that acquires, owns, renovates, and sells real estate for its own account and through affiliated entities. Growth Gate Capital is not a real estate brokerage and does not represent property owners, buyers, or any other party in a real estate transaction unless expressly disclosed in a separate written agreement.</p>
+        <p>Judson Robertson and Matthew (&ldquo;Jay&rdquo;) are licensed real estate agents in the State of Florida. However, when conducting business through Growth Gate Capital, LLC, they are acting solely as real estate investors and principals of the company and are not acting as agents, brokers, or fiduciaries for property owners, buyers, or any other party unless a separate written brokerage agreement has been executed.</p>
+        <p>Any communications, property evaluations, or purchase offers made by Growth Gate Capital are made solely in its capacity as a prospective purchaser and should not be construed as real estate brokerage services, legal advice, tax advice, financial advice, or representation of any party. Property owners are encouraged to seek independent legal, tax, financial, and real estate advice before entering into any transaction.</p>
+        <p>All offers are subject to property inspection, title review, underwriting, and final approval by the purchaser.</p>
+      </div>
     </div>
   </div>
 </footer>
